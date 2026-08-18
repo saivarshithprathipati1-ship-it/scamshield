@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ScamShield</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🛡️ ScamShield</h1>
+
+        <p class="subtitle">
+            Smart Scam Message Detection
+        </p>
+
+
+        <!-- Message Input -->
+
+        <textarea
+            id="message"
+            placeholder="Paste your suspicious message here..."></textarea>
+
+
+        <button id="checkButton" onclick="checkScam()">
+            🔍 Check Message
+        </button>
+
+
+        <!-- Scan Result -->
+
+        <div id="result"></div>
+
+
+        <!-- Dashboard -->
+
+        <div class="dashboard">
+
+            <h2>📊 ScamShield Dashboard</h2>
+
+            <div class="dashboard-grid">
+
+                <div class="stat-card">
+
+                    <h3>Total Scans</h3>
+
+                    <p id="totalScans">0</p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <h3>🔴 Scams</h3>
+
+                    <p id="scamCount">0</p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <h3>🟢 Safe</h3>
+
+                    <p id="safeCount">0</p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <h3>📈 Average Risk</h3>
+
+                    <p id="averageRisk">0%</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Scan History -->
+
+        <div class="history-container">
+
+            <h2>📋 Scan History</h2>
+
+            <div id="history"></div>
+
+            <button onclick="clearHistory()">
+                🗑️ Clear History
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
