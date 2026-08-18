@@ -1,0 +1,10 @@
+{
+  "appId": "com.scamshield.app",
+  "appName": "ScamShield",
+  "webDir": "frontend",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "http",
+    "cleartext": true
+  }
+}
